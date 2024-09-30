@@ -14,7 +14,7 @@
             color: #333;
         }
         header {
-            background-color: #35424a;
+            background-color: #2e8b57; /* Changement de la couleur de l'entête en vert */
             color: #ffffff;
             padding: 10px 0;
             text-align: center;
@@ -35,32 +35,43 @@
             margin: 20px 0;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-out; /* Ajout de l'animation pour chaque bloc */
         }
         h2 {
-            color: #35424a;
             color: #364a35;
-            animation: slideIn 1s ease-out;
         }
         .portfolio a {
-            color: #35424a;
+            color: #2e8b57;
             text-decoration: none;
         }
         .portfolio a:hover {
             text-decoration: underline;
         }
         footer {
-            background-color: #35424a;
+            background-color: #2e8b57;
             color: #ffffff;
             text-align: center;
             padding: 10px 0;
             margin-top: 20px;
+        }
+
+        /* Animation CSS */
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <h1>SIKIROU Fawase</h1>
-        <p>Analyste de données |Développeur Web | Junior Planificateur et Suivi-Évaluateur</p>
+        <p>Analyste de données | Développeur Web | Junior Planificateur et Suivi-Évaluateur</p>
     </header>
 
     <div class="container">
